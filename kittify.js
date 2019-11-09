@@ -37,6 +37,7 @@
       img.width = width;
       // Set the width of the current image
       img.height = height;
+      img.style.border = '5px solid #eb5367';
     }
   }
 
