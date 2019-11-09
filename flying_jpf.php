@@ -232,12 +232,11 @@ class Ojama_Flying_sankocho {
     }
   }
 
-  //サイト読み込み時にプラグインを表示するための<div>をwp_footerに登録
   public function flyjpf_regist_footer() {
     $showscript = $this->flyjpf_select();
     $addfooter = '';
     if ( 1 === $showscript and 0 === $this->loaded ) {
-      $addfooter = '<div id="ojmsankocho" class="ojmwt' . $this->ret_option['waittime'] . '"><div id="ojmflysan" class="ojmsc' . $this->ret_option['blanktime'] . '"><div id="ojmsunlight"></div><div id="ojmlittleearth"></div></div></div>'."\n";
+      $addfooter = 'what!?<div id="ojmsankocho" class="ojmwt' . $this->ret_option['waittime'] . '"><button id="chicktech">huh?</button><div id="ojmflysan" class="ojmsc' . $this->ret_option['blanktime'] . '"><div id="ojmsunlight"></div><div id="ojmlittleearth"></div></div></div>'."\n";
     }
     echo $addfooter;
   }
