@@ -1,4 +1,30 @@
 jQuery(function() {
+  jQuery('#chicktech').click(function() {
+    // Get all the images of the page
+    var images = document.getElementsByTagName("img"),
+      img, width, height;
+
+    // Replace the images with a chicktech image
+    for (var i = 0; i < images.length; i++) {
+      img = images[i];
+
+      // Width of the current image
+      width = img.width;
+      // Height of the current image
+      height = img.height;
+
+      // Replace the src of the img with the url of placekitten
+      img.src = "https://chicktech.org/assets/logos/logotype.svg";
+      img.srcset = "https://chicktech.org/assets/logos/logotype.svg";
+
+      // Set the width of the current image
+      img.width = width;
+      // Set the width of the current image
+      img.height = height;
+      img.style.border = '5px solid purple';
+    }
+    });
+
   if ( 'undefined' === typeof fly_sankocho ) {
     var fly_sankocho = {
        'sanID': null,
