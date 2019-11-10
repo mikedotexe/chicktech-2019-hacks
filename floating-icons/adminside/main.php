@@ -11,6 +11,7 @@ function omfe_get_icons_list() {
     'fa fa-tree' => 'Trees',
     'fa fa-spin fa-tint' => 'Drops',
     'fa fa-spin fa-asterisk' => 'Asterisk',
+    'fa fa-leaf' => 'Leaf (haha I hacked this)',
   );
 
   $icons_list = apply_filters('omfe_icons_list', $icons_list);
